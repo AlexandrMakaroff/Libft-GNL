@@ -6,13 +6,13 @@
 /*   By: fgeorgan <fgeorgan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 15:45:33 by fgeorgan          #+#    #+#             */
-/*   Updated: 2020/11/22 15:03:02 by fgeorgan         ###   ########.fr       */
+/*   Updated: 2021/08/08 20:32:12 by fgeorgan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(const char *s)
+static size_t	ft_strlen(const char *s)
 {
 	size_t	count;
 

@@ -6,7 +6,7 @@
 /*   By: fgeorgan <fgeorgan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 04:51:05 by fgeorgan          #+#    #+#             */
-/*   Updated: 2021/03/09 16:20:49 by fgeorgan         ###   ########.fr       */
+/*   Updated: 2021/08/08 20:23:53 by fgeorgan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef	struct		s_dlist
 	struct s_dlist	*next;
 }					t_dlist;
 
+//					The functions of first part
 char				*ft_strdup(const char *str);
 void				*ft_calloc(size_t count, size_t size);
 void				*ft_memset(void *s, int c, size_t n);
@@ -56,6 +57,7 @@ int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
+//					The functions of second part
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const*s2);
 char				*ft_strtrim(char const *s1, char const *set);
@@ -68,6 +70,7 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
+//					The functions of bonus part
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new);
 int					ft_lstsize(t_list *lst);
@@ -79,6 +82,7 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
 
+//					The my functions of doubly linked lists
 t_dlist				*ft_dlst_new(void *content);
 void				ft_dlst_add(t_dlist **lst, t_dlist *new);
 

@@ -6,7 +6,7 @@
 /*   By: fgeorgan <fgeorgan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 16:02:21 by fgeorgan          #+#    #+#             */
-/*   Updated: 2021/01/19 15:47:48 by fgeorgan         ###   ########.fr       */
+/*   Updated: 2021/08/08 20:24:43 by fgeorgan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ int		get_next_line(int fd, char **line)
 
 	if (fd < 0 || !line || BUFFER_SIZE < 1 || !(read_line(fd, &stat)))
 		return (-1);
-
 	if (!stat)
 	{
 		*line = get_line("\0");
