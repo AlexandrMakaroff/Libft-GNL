@@ -1,3 +1,3 @@
 # libft
 My extended standard library
-and Get_Next_Line.
+with Get_Next_Line.
